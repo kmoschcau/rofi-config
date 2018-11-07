@@ -1,0 +1,87 @@
+* {
+  background:        #fafafa;
+  background-darker: #ddd;
+  foreground:        #666;
+  selection:         #cceae7;
+  line:              #eaeff0;
+  comment:           #90a4ae;
+  red:               #e53935;
+  yellow:            #ffad13;
+  cyan:              #39ADB5;
+  blue:              #8796B0;
+
+  text-color: @foreground;
+}
+
+#window {
+  font: "Hack 9";
+}
+
+#mainbox {
+  background-color: @line;
+  border: 1px solid;
+  border-color: @foreground;
+  padding: 3px;
+  spacing: 3px;
+}
+
+#inputbar, entry {
+  background-color: @selection;
+}
+
+#prompt, case-indicator {
+  background-color: @cyan;
+  padding: 0 1ch 0 1ch;
+  text-color: @background;
+}
+
+#inputbar {
+  spacing: 1ch;
+}
+
+#textbox {
+  background-color: @background;
+  padding: 3px 1ch;
+}
+
+#listview {
+  background-color: @background;
+  padding: 3px;
+  scrollbar: true;
+}
+
+#scrollbar {
+  background-color: @line;
+  handle-width: 1ch;
+  handle-color: @foreground;
+}
+
+#element {
+  background-color: @background;
+  padding: 0 1ch 0 1ch;
+}
+
+#element.selected {
+  background-color: @selection;
+}
+
+#element.active {
+  background-color: @cyan;
+  text-color: @background;
+}
+
+#element.urgent {
+  background-color: @yellow;
+}
+
+#sidebar {
+  spacing: 0;
+}
+
+#button {
+  background-color: @background-darker;
+}
+
+#button.selected {
+  background-color: @background;
+}

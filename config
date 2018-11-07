@@ -1,2 +1,2 @@
-rofi.font: Hack 9
-rofi.theme: gruvbox-dark-custom.rasi
+rofi.theme: material-light.rasi
+rofi.sidebar-mode: true
