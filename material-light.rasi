@@ -1,14 +1,13 @@
 * {
   background:        #fafafa;
-  background-darker: #ddd;
-  foreground:        #666;
-  selection:         #cceae7;
-  line:              #eaeff0;
-  comment:           #90a4ae;
-  red:               #e53935;
+  background-darker: #e0e0e0;
+  foreground:        #616161;
+  selection:         #b2ebf2;
+  line:              #616161;
   yellow:            #ffad13;
-  cyan:              #39ADB5;
-  blue:              #8796B0;
+  cyan:              #00b8d4;
+  scrollbar:         #bdbdbd;
+  thumb:             #212121;
 
   text-color: @foreground;
 }
@@ -26,7 +25,7 @@
 }
 
 #inputbar, entry {
-  background-color: @selection;
+  background-color: @background;
 }
 
 #prompt, case-indicator {
@@ -51,9 +50,9 @@
 }
 
 #scrollbar {
-  background-color: @line;
+  background-color: @scrollbar;
   handle-width: 1ch;
-  handle-color: @foreground;
+  handle-color: @thumb;
 }
 
 #element {
